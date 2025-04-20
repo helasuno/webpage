@@ -1,0 +1,43 @@
+site_name: Helasuno
+repo_url: https://github.com/helasuno/helasuno
+theme:
+  logo: icon.png
+  name: material
+  icon:
+    repo: fontawesome/brands/git-alt
+  language: en
+  palette:
+    primary: blue grey
+    media: "(prefers-color-scheme: light)"
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+
+    media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+use_directory_urls: false
+nav:
+  - Home: index.md
+  - Changelog: changelog.md
+  - FAQ: faq.md
+  - Users:
+    - Packaging & Setup: packaging_setup.md
+    - Language Definition: lang_definition.md
+    - Tutorial: tutorial.md
+  - Developers:
+    - Working on the Interpreter: development.md
+extra:
+  consent:
+    title: Cookies Consent
+    description: >-
+      Cookies are used here only to the extent that they are required.
+      It's unclear which cookies are used in the tool used to make this
+      site so don't hesitate to reject cookies here.
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
