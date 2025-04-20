@@ -1,5 +1,5 @@
 # Welcome to Helasuno
-Helasuno (hee-la-sue-no), coming from the (butchered) blending of the Esperanto words "bright" (hela) and "sun" (suno), is a simple non-structured scripting language. Inspired loosely by BASIC and a desire to learn more about parsing text, Helasuno is a primitive scripting language by design.
+Helasuno (hee-la-sue-no), coming from the (butchered) blending of the Esperanto words "bright" (hela) and "sun" (suno), is a simple non-structured scripting language. Inspired loosely by BASIC and a desire to learn more about parsing text, Helasuno is a primitive scripting language by design. The project started being developed in 2024 but the first release to the public was on 20/04/2025.
 
 !!! Note
 
@@ -10,8 +10,8 @@ First and foremost, you need a working Python installation. The language is writ
 
 If you just want to get going, you can run the following on a *nix (macOS, Linux, BSD) system:
 
-    git clone https://github.com/helasuno/helasuno.git
-    cd helasuno/
+    git clone https://github.com/helasuno/lang.git
+    cd lang/
     python3 package.py
 
 The above will create an executable Python zipapp in `dist/` that will work well across *nix platforms. If `vsce` is installed, a Visual Studio Code extension will also be available in `dist/`.
