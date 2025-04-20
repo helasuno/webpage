@@ -32,12 +32,22 @@ If you're interested in working on the language itself (ie. you don't want to wr
 
 If you're looking for more details about the language, head over to the FAQ page.
 
+### Repositories
+The project is split across multiple git repositories.
+
+| Repository | Description |
+|----|----|
+| [github.com/helasuno/lang](github.com/helasuno/lang) | This is the main repo with the interpreter itself. |
+| [github.com/helasuno/media](github.com/helasuno/media) | This houses any media used in the project including icons and other art. |
+| [github.com/helasuno/samples](github.com/helasuno/samples) | This houses sample scripts for testing and tutorials. |
+| [https://github.com/helasuno/vscode_extension](https://github.com/helasuno/vscode_extension) | This is the home of the Visual Studio Code extension. |
+| [github.com/helasuno/webpage](github.com/helasuno/webpage) | This is the mkdocs material for producing the project's website. |
 
 ## Licences
 The code and materials are provided under either the MIT licence or are available as part of the public domain.
 
-### Source Code (MIT Licence)
-`Covers docs/, src/, tests/, tools/`
+### MIT Licence
+`Covers the source code for the interpreter (helasuno/lang), the VS Code extension (helasuno/vscode_extension), some (but not all of helasuno/media), and the website (helasuno/webpage)`
 
 Copyright 2024-2025 Bryan Smith.
 
@@ -47,7 +57,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### Art and Samples
-`Covers img/, samples/`
+### Public Domain
+`Covers some of the media (helasuno/media) and the sample code (helasuno/samples)`
 
-Public Domain. The icons in `img/icons/` come from the Tango Project and are available in the public domain. The sample scripts in `samples/` are also public domain (do with them what you'd like).
+Public Domain. The base icons come from the Tango Project and are available in the public domain. In the spirit of keeping things in the public domain as such, the combination of them into the project's logo/icon is also public domain.
+
+The sample scripts are also public domain (do with them what you'd like).

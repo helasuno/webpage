@@ -1,2 +1,5 @@
 # The produced site
 site/
+
+# Junk macOS files
+.DS_Store
