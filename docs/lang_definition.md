@@ -161,6 +161,8 @@ The `pause` statement pauses the script for a specified number of seconds. It ta
 **Structure**
 > [line number] pause [pause_length]
 
+The `pause_length` can be an integer or a string (to pull in variables or calculate expressions for instance).
+
 **Statement Modifiers**
 
 None.
@@ -262,4 +264,3 @@ If you run into an error or warning, you will notice that an error code is inclu
 | 21 | Error | You passed something to a `jump` statement that isn't a valid number. |
 | 22 | Error | This error is thrown if the script is stuck in a loop and if there's no certain break from the loop. Check for any `jump` statements that might create an unending loop. |
 | 23 | Error | An invalid line number is passed to a `jump` statement. Unlike error 21, where the error is thrown if something like "ab" is passed (ie. not a number), this error is thrown if a valid line number is provided but if the number doesn't exist. |
-| 24 | Error | A value was passed to the `pause` statement that isn't a number. If you passed a number as a string (eg. `XX pause "3"`), you ned to pass a number. |
