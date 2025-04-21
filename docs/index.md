@@ -37,11 +37,11 @@ The project is split across multiple git repositories.
 
 | Repository | Description |
 |----|----|
-| [github.com/helasuno/lang](github.com/helasuno/lang) | This is the main repo with the interpreter itself. |
-| [github.com/helasuno/media](github.com/helasuno/media) | This houses any media used in the project including icons and other art. |
-| [github.com/helasuno/samples](github.com/helasuno/samples) | This houses sample scripts for testing and tutorials. |
+| [https://github.com/helasuno/lang](https://github.com/helasuno/lang) | This is the main repo with the interpreter itself. |
+| [https://github.com/helasuno/media](https://github.com/helasuno/media) | This houses any media used in the project including icons and other art. |
+| [https://github.com/helasuno/samples](https://github.com/helasuno/samples) | This houses sample scripts for testing and tutorials. |
 | [https://github.com/helasuno/vscode_extension](https://github.com/helasuno/vscode_extension) | This is the home of the Visual Studio Code extension. |
-| [github.com/helasuno/webpage](github.com/helasuno/webpage) | This is the mkdocs material for producing the project's website. |
+| [https://github.com/helasuno/webpage](https://github.com/helasuno/webpage) | This is the mkdocs material for producing the project's website. |
 
 ## Licences
 The code and materials are provided under either the MIT licence or are available as part of the public domain.
