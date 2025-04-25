@@ -1,7 +1,7 @@
 site_name: Helasuno
 repo_url: https://github.com/helasuno/lang
 theme:
-  logo: icon.png
+  logo: img/icon.png
   name: material
   icon:
     repo: fontawesome/brands/git-alt
@@ -13,7 +13,6 @@ theme:
     toggle:
       icon: material/brightness-7
       name: Switch to dark mode
-
     media: "(prefers-color-scheme: dark)"
     scheme: slate
     toggle:
@@ -24,12 +23,21 @@ nav:
   - Home: index.md
   - Changelog: changelog.md
   - FAQ: faq.md
-  - Users:
-    - Packaging & Setup: packaging_setup.md
-    - Language Definition: lang_definition.md
-    - Tutorial: tutorial.md
   - Developers:
     - Working on the Interpreter: development.md
+  - Language:
+    - Conventions: lang_conventions.md
+    - Statements:
+      - end: stmts/end.md
+      - get: stmts/get.md
+      - jump: stmts/jump.md
+      - pause: stmts/pause.md
+      - set: stmts/set.md
+      - write/writeln: stmts/write.md
+  - Getting Started:
+    - Packaging & Setup: packaging_setup.md
+    - VS Code Extension: vscode_ext.md
+    - Tutorial: tutorial.md
 extra:
   consent:
     title: Cookies Consent

@@ -1,7 +1,11 @@
 # Language Definition
-This document outlines the inner workings of the language and provides a sense of how to use each statement.
+This document outlines:
 
-**Audience: script writers**
+- things to keep in mind while writing a script;
+- information about variables including how to access them;
+- information about statement modifiers;
+- error code elaborations.
+
 
 !!! Note
 
@@ -66,7 +70,7 @@ Reserved variables are a set of variables that start with what is called the pro
 ## Statement Modifiers
 Some statements have things called *statement modifiers*, often called statmods. These are means to modify the functionality of a statement.
 
-Statmods follow a statement after the statement modifier operator: ->. They following the basic structure seen here:
+Statmods follow a statement after the statement modifier operator: `->`. They following the basic structure seen here:
 
     [line_number] [statement] [statement_value] -> [statmod]
 
@@ -76,164 +80,11 @@ An example for the `write` statement looks like the following:
 
 The output of that will be HELLO WORLD as the *upper* statmod translates the output of a `write` statement to upper case.
 
-Statmods can be chained if you pass them as a string and seperate them with a `|`. For example, the following will print "hello world" in upper case letters and green:
+Statmods can be "chained" if you pass them as a string and seperate them with a `|`. For example, the following will print "hello world" in upper case letters and green:
 
     20 write "hello world" -> "upper|green"
 
 **NOTE: Some chaining requires particular statmods to be passed prior to others. For instance, the `write` and `writeln` statements require that statmods that change case come before those that change colours. You can know the appropriate order to place them in by following the ordering of them in statement definitions below.**
-
-
-## Statement Definitions
-This section provides you with an overview of each statement in the language and how to use them.
-
-### end
-Each `end` statement ends the script and must be the last statement in the script.
-
-An `end` statement has no statement modifiers as there is nothing to modify about the ending of a script.
-
-**Structure**
-
-> [line number] end
-
-**Statement Modifiers**
-
-None.
-
-**Example**
-
-    1 write "Hello World"
-    2 end
-
-
-
-### get
-The `get` statement facilitates getting user input and assigning it to a variable. It has a structure similar to the `set` statement but instead of assigning a variable in code, the value of the variable is set based on a prompt put to the user.
-
-
-**Structure**
-
-> [line number] get [variable_name] = "[prompt_to_get_input]"
-
-**Statement Modifiers**
-
-None.
-
-**Example**
-
-    1 get name = "What is your name?"
-    2 write "Hello #name"
-    3 end
-
-
-
-### jump
-The `jump` statement facilitates jumping around the script by line number. This is similar to the `goto` statement that you might see in other languages.
-
-A note on jump statements needs to be made. Jumping in code via statements are controversial. As [Sanfoundry](https://www.sanfoundry.com/c-question-goto-statement-pros-cons/) puts it: "By using gotos excessively, you create a labyrinth of program flow. If you aren’t familiar with gotos, keep it that way. If you are used to using them, try to train yourself not to." Or, put more humourously by XKCD:
-
-![go to dinosaur comic from XKCD](https://imgs.xkcd.com/comics/goto.png)
-Comic courtesy of xkcd. Licensed under the Creative Commons Attribution-NonCommercial 2.5 License: https://creativecommons.org/licenses/by-nc/2.5/.
-
-Look, no dinosaur, metaphorical or otherwise, is going to come get you. More realistically, the interpreter is not going to complain if you use this (otherwise, why would it be here?). It is hoped that this will be removed in the future with something better but for now, this is how you can move across a script.
-
-**Structure**
-
-> [line number] jump [line_number]
-
-**Statement Modifiers**
-
-None.
-
-**Example**
-
-    10 - The script is public domain
-    20 jump 40
-    30 writeln "Hello"
-    40 writeln "World"
-    50 end
-
-This would output *World* to the screen as line 30 would be jumped over.
-
-
-### pause
-The `pause` statement pauses the script for a specified number of seconds. It takes an integer as the value.
-
-**Structure**
-> [line number] pause [pause_length]
-
-The `pause_length` can be an integer or a string (to pull in variables or calculate expressions for instance).
-
-**Statement Modifiers**
-
-None.
-
-**Example**
-
-    10 write "Hello "
-    20 pause 3
-    30 write "World"
-    40 end
-
-This will pause the script for three seconds between "Hello" being written to the screen and "World" being written.
-
-
-
-### set
-The `set` statement assigns a value to a variable. There is no type checking here and any value can be assigned to a variable. The only exceptions are as follows:
-- A variable cannot be named after a builtin statement.
-- A variable cannot start with what is called the prohibited prefix which is *hs_*. These are for reserved variables. See the [variables](#variables) section above for more on reserved variables.
-
-**Structure**
-> [line number] set [variable_name] = "[variable_value]"
-
-**Statement Modifiers**
-
-None.
-
-**Example**
-
-    10 set name = "World"
-    20 write "Hello #name"
-    30 end
-
-This will output "Hello World" to the screen.
-
-
-### write and writeln
-The `write` and `writeln` statements output text to the screen, similar to the *print()* function in Python.
-
-The difference between the `write` and `writeln` statements is simple:
-- `write`: write text to the screen but do not add a new line at the end, allowing any following output to appear on the same line
-- `writeln`: write text to the screen and add a new line at the end, forcing any following output to appear on the next line
-
-**Structure**
-
-> [line number] write "[output]"
-
-> [line number] writeln "[output]"
-
-
-**Statement Modifiers**
-
-| Statmod | Description |
-|-----|-----|
-| lower | Convert the string to be printed to lower case |
-| upper | Convert the string to be printed to upper case |
-| blue | Write the string to the screen in blue |
-| green | Write the string to the screen in green |
-| magenta | Write the string to the screen in magenta |
-| red | Write the string to the screen in red |
-| yellow | Write the string to the screen in yellow |
-
-
-**Examples**
-
-    10 write "Hello"
-    20 writeln "World"
-    30 writeln "Hi there!"
-    40 end
-
-This will output "HelloWorld" on one line as the `write` statement on line 10 won't push the next output to a new line. The `writeln` call on line 20 will push the next output to a new line so line 30 - *Hi there!* - will appear on its own line.
 
 
 ## Error Codes

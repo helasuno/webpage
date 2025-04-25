@@ -10,7 +10,7 @@ This document walks you through getting started with setting up an environment f
 ## Getting the Code
 As the languag continues to grow, the only way to get the code now is via the GitHub repository. The link to the repository is available in the top right corner of this page or via the following:
 
-    git clone https://github.com/helasuno/helasuno.git
+    git clone https://github.com/helasuno/lang.git
 
 ## Packaging The Interpreter
 Before you get started writing a Helasuno script, you need to create a working version of the interpreter. While ideally a pre-packaged version would be provided with an elegant installer, the focus right now is on providing you with the minimum needed so that attention can be paid to working on the language itself. That said, you're not left on your own and two packaging methods are provided: a [packaging script](#package-script) and a [Makefile](#makefile).
@@ -53,23 +53,6 @@ You can pass parameters to the Makefile for more specific functions.
 | binary | If you have `nuitka` installed, you can create a binary of the interpreter. This works on macOS and FreeBSD. Not yet supported: NetBSD. |
 | bytecode | Compile modules to Python bytecode in the `src/` directory. |
 | clean | Clean up the source code directory of any lingering bytecode. |
-| doc | If you have `pandoc` installed, you can convert the Markdown documents in `docs/` to HTML files in `dist/docs/`. |
 | install | Copy the interpreter to `/usr/local/bin/`. This is *nix spcific and depends on the existence of the interpreter in `dist/` (run `make` first before running `make install`). |
 | package | Package up the interpreter and place it in `dist/`. |
 | source | Create zip file and bunzip'd tarball in `dist/`. |
-| vscode | With `vsce` installed, you can use this to create a Visual Studio Code extension that adds basic language support to the code editor. |
-| web | With [mkdocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/) installed, use this to generate the homepage for the project. |
-
-
-### VS Code Extension
-A rudimentary VS Code extension is provided in `tools/hs_vscode/` and can be packaged with [vsce](https://code.visualstudio.com/api/working-with-extensions/publishing-extension):
-
-    vsce package --allow-missing-repository
-
-Once that is done, in VS Code, install the extension using the command palette option `Extension: Install from VSIX...` and select the VSIX file.
-
-You can package the VS Code extension with the Makefile if that's easier as well:
-
-    make vscode
-
-You are, of course, welcome to use any code editor but the only one targeted for any support will be Visual Studio Code.

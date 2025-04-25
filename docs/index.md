@@ -1,5 +1,5 @@
 # Welcome to Helasuno
-Helasuno (hee-la-sue-no), coming from the (butchered) blending of the Esperanto words "bright" (hela) and "sun" (suno), is a simple non-structured scripting language. Inspired loosely by BASIC and a desire to learn more about parsing text, Helasuno is a primitive scripting language by design. The project started being developed in 2024 but the first release to the public was on 20/04/2025.
+Helasuno (hee-la-sue-no), coming from the (butchered) blending of the Esperanto words "bright" (hela) and "sun" (suno), is a simple non-structured and statement driven scripting language. Inspired loosely by BASIC and a desire to learn more about parsing text, Helasuno is a primitive scripting language by design. The project started being developed in 2024 but the first release to the public was on 20/04/2025.
 
 !!! Note
 
@@ -37,11 +37,11 @@ The project is split across multiple git repositories.
 
 | Repository | Description |
 |----|----|
-| [https://github.com/helasuno/lang](https://github.com/helasuno/lang) | This is the main repo with the interpreter itself. |
-| [https://github.com/helasuno/media](https://github.com/helasuno/media) | This houses any media used in the project including icons and other art. |
-| [https://github.com/helasuno/samples](https://github.com/helasuno/samples) | This houses sample scripts for testing and tutorials. |
-| [https://github.com/helasuno/vscode_extension](https://github.com/helasuno/vscode_extension) | This is the home of the Visual Studio Code extension. |
-| [https://github.com/helasuno/webpage](https://github.com/helasuno/webpage) | This is the mkdocs material for producing the project's website. |
+| [helasuno/lang](https://github.com/helasuno/lang) | This is the main repo with the interpreter itself. |
+| [helasuno/media](https://github.com/helasuno/media) | This houses any media used in the project including icons and other art. |
+| [helasuno/samples](https://github.com/helasuno/samples) | This houses sample scripts for testing and tutorials. |
+| [helasuno/vscode_extension](https://github.com/helasuno/vscode_extension) | This is the home of the Visual Studio Code extension. |
+| [helasuno/webpage](https://github.com/helasuno/webpage) | This is the mkdocs material for producing the project's website. |
 
 ## Licences
 The code and materials are provided under either the MIT licence or are available as part of the public domain.
