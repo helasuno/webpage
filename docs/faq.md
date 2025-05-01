@@ -24,4 +24,4 @@ In light of the above, it's important to note that the language and the source c
 
 3. To help others learn how to create their own rudimentary scripting language and engage critically with the code.
 
-I make no claims, at all, that I have expertise in making scripting languages so this code is available for critique. I am more than happy for the code to be built upon, torn down, or used pedagogically to support a consideration of best or worst practices.
+I make no claims, at all, that this code is necessarily good or conformant with any professional or technical standards. I am more than happy for the code to be built upon, torn down, or used pedagogically to support a consideration of best or worst practices.

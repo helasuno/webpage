@@ -3,3 +3,6 @@ site/
 
 # Junk macOS files
 .DS_Store
+
+# Sample mp4 file that may be used
+docs/videos/sample.mp4

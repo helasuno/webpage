@@ -10,7 +10,7 @@ This document will walk you through writing an increasingly complex Helasuno scr
 ## Checking the Interpreter
 To get started, we need to check that we have access to the interpreter. Let's check by executing the following:
 
-    helasuno -v
+    hs -v
 
 If you installed the interpreter with the Makefile (`make && make install`) on a *nix system, you should be good to go and see something like the following:
 
@@ -39,7 +39,7 @@ If you installed the interpreter with the Makefile (`make && make install`) on a
 
 On Windows, you will need to call python to run the package:
 
-    python.exe .\helasuno -v
+    python.exe .\hs -v
 
 That should yield something similar to the following:
 
@@ -49,11 +49,11 @@ That should yield something similar to the following:
 
 ### Using the Interpreter
 
-    helasuno [script_name]
+    hs [script_name]
 
 You may also see the following suggested as a common pattern for running scripts:
 
-    helasuno -r [script_name]
+    hs -r [script_name]
 
 The `-r` flag will reline the script before executing it, helping to prevent warnings from appearing that the script doesn't conform to line numbering conventions. You may see this commonly used as this will help to keep the numbering conformant with only a minimal hit to performance. In light of that, we will be running any scripts below with the `-r` flag from here out.
 

@@ -14,11 +14,11 @@ If you just want to get going, you can run the following on a *nix (macOS, Linux
     cd lang/
     python3 package.py
 
-The above will create an executable Python zipapp in `dist/` that will work well across *nix platforms. If `vsce` is installed, a Visual Studio Code extension will also be available in `dist/`.
+The above will create an executable Python zipapp in `dist/` that will work well across *nix platforms.
 
 Using Helasuno is similar to any other interpreter:
 
-    helasuno [name of script]
+    hs [name of script]
 
 Downloads of the interpreter and Visual Studio Code will be made available once a release of each is finalised.
 
@@ -47,7 +47,7 @@ The project is split across multiple git repositories.
 The code and materials are provided under either the MIT licence or are available as part of the public domain.
 
 ### MIT Licence
-`Covers the source code for the interpreter (helasuno/lang), the VS Code extension (helasuno/vscode_extension), some (but not all of helasuno/media), and the website (helasuno/webpage)`
+`Covers the source code for the interpreter (helasuno/lang), the VS Code extension (helasuno/vscode_extension), some (but not all) of helasuno/media, and the website (helasuno/webpage)`
 
 Copyright 2024-2025 Bryan Smith.
 

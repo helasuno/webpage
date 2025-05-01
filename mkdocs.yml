@@ -23,8 +23,11 @@ nav:
   - Home: index.md
   - Changelog: changelog.md
   - FAQ: faq.md
-  - Developers:
-    - Working on the Interpreter: development.md
+  - Media: media.md
+  - Getting Started:
+    - Packaging & Setup: packaging_setup.md
+    - VS Code Extension: vscode_ext.md
+    - Tutorial: tutorial.md
   - Language:
     - Conventions: lang_conventions.md
     - Statements:
@@ -34,10 +37,8 @@ nav:
       - pause: stmts/pause.md
       - set: stmts/set.md
       - write/writeln: stmts/write.md
-  - Getting Started:
-    - Packaging & Setup: packaging_setup.md
-    - VS Code Extension: vscode_ext.md
-    - Tutorial: tutorial.md
+  - Developers:
+    - Working on the Interpreter: development.md
 extra:
   consent:
     title: Cookies Consent
