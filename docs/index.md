@@ -1,9 +1,9 @@
 # Welcome to Helasuno
-Helasuno (hee-la-sue-no), coming from the (butchered) blending of the Esperanto words "bright" (hela) and "sun" (suno), is a simple non-structured and statement driven scripting language. Inspired loosely by BASIC and a desire to learn more about parsing text, Helasuno is a primitive scripting language by design. The project started being developed in 2024 but the first release to the public was on 20/04/2025.
+Helasuno (hee-la-sue-no), coming from the (butchered) blending of the Esperanto words "bright" (hela) and "sun" (suno), is a simple non-structured and statement driven scripting language. Inspired loosely by BASIC and a desire to learn more about parsing text, Helasuno is a primitive scripting language by design. The project started being developed in 2024 but the first source release to the public was on 20/04/2025. The first packaged "stable" version is still a ways off yet.
 
 !!! Note
 
-    The language and documentation are under heavy development. Don't be surprised if you come across errors in the documentation, code, or both.
+    The language design is still under heavy revision. It is possible that convetions and design will change so don't be surprised if there is some sort of disconnect between what is here and what works (or doesn't). All efforts will be made to ensure alignment between the functionality of the interpreter and the documentation here.
 
 ### Quick Start
 First and foremost, you need a working Python installation. The language is written in pure Python so a working version of Python installed that is >= version 3.10 will do.

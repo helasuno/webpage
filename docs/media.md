@@ -13,7 +13,7 @@ These videos walk you through how to get everything set up for your environment.
 This video walks through setting up the interpreter.
 
 <video controls>
-    <source src="videos/sample.mp4" type="video/mp4">
+    <source src="videos/user_1_getting_started.mp4" type="video/mp4">
 </video>
 
 ## User Tutorials

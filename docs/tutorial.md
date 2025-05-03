@@ -37,7 +37,7 @@ If you installed the interpreter with the Makefile (`make && make install`) on a
 
 
 
-On Windows, you will need to call python to run the package:
+On Windows, you will need to call Python to run the package:
 
     python.exe .\hs -v
 

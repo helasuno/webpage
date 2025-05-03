@@ -5,4 +5,4 @@ site/
 .DS_Store
 
 # Sample mp4 file that may be used
-docs/videos/sample.mp4
+docs/videos/*
