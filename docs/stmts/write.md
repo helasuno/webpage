@@ -18,10 +18,19 @@ The difference between the `write` and `writeln` statements is simple:
 ### Statement Modifiers
 The statmods below need to be accessed in the order that they are provided. For instance, if you want a lowercase and green string to be written to the screen, you will need to chain them in the following order: *"lower|green"*
 
+**Max Statmods: 2**
+
+#### Case
+Only one of these are allowed
 | Statmod | Description |
 |-----|-----|
 | lower | Convert the string to be printed to lower case |
 | upper | Convert the string to be printed to upper case |
+
+#### Colour
+Only one of these are allowed. If multiple colours are included, the first one will be the colour set.
+| Statmod | Description |
+|-----|-----|
 | blue | Write the string to the screen in blue |
 | green | Write the string to the screen in green |
 | magenta | Write the string to the screen in magenta |
