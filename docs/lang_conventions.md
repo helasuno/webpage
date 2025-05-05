@@ -115,3 +115,4 @@ If you run into an error or warning, you will notice that an error code is inclu
 | 21 | Error | You passed something to a `jump` statement that isn't a valid number. |
 | 22 | Error | This error is thrown if the script is stuck in a loop and if there's no certain break from the loop. Check for any `jump` statements that might create an unending loop. |
 | 23 | Error | An invalid line number is passed to a `jump` statement. Unlike error 21, where the error is thrown if something like "ab" is passed (ie. not a number), this error is thrown if a valid line number is provided but if the number doesn't exist. |
+| 24 | Error | This error occurs when you try to substitute a variable but forget the name, that is, you just provide the symbol (eg. `30 writeln "Hello #"`). Fixing this is as simple as making sure all variable names are accounted for. If you meant to include just the `#` symbol, you need to escape it by providing it twice: `##`. |

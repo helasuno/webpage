@@ -16,7 +16,8 @@ This document outlines how to work on the interpreter and thus, the language its
 * Tabs, not spaces. I know that PEP 8 notes that spaces are preferred but it also notes that tabs should be used when code already uses tabs. Here, tabs have been used so to remain consistent with PEP 8, use tabs.
     * PEP 8's recommendation for line length is adhered to however.
 
-
+## Creating Releases
+* Make sure to set `src/etc/global_values.py` -> `LANG_DEV_VERSION` to `False`.
 
 ## src/ breakdown
 The `src/` directory is broken down into a handful of directories that have specific purposes.
