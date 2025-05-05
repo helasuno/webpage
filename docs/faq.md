@@ -9,7 +9,7 @@ This document outlines some common (anticipated) questions.
 * [Why do we need another scripting language?](#why-do-we-need-another-scripting-language)
 
 ### What do I need to get started writing Helasuno scripts?
-All you need to get started is a working install of Python (as of now, at least version 3.10) and the instructions in the [Getting Started](packaging_setup.md) document.
+All you need to get started is a working install of Python (as of now, at least version 3.12) and the instructions in the [Getting Started](packaging_setup.md) document.
 
 While you don't technically need Visual Studio Code, an extension is provided (see the [Getting Started](packaging_setup.md) document) that makes for a more pleasant coding experience. As of now, the Visual Studio Code extension supports syntax highlighting and snippets.
 

@@ -6,7 +6,7 @@ Helasuno (hee-la-sue-no), coming from the (butchered) blending of the Esperanto 
     The language design is still under heavy revision. It is possible that convetions and design will change so don't be surprised if there is some sort of disconnect between what is here and what works (or doesn't). All efforts will be made to ensure alignment between the functionality of the interpreter and the documentation here.
 
 ### Quick Start
-First and foremost, you need a working Python installation. The language is written in pure Python so a working version of Python installed that is >= version 3.10 will do.
+First and foremost, you need a working Python installation. The language is written in pure Python so a working version of Python installed that is >= version 3.12 will do.
 
 If you just want to get going, you can run the following on a *nix (macOS, Linux, BSD) system:
 
