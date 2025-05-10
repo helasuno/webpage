@@ -8,8 +8,16 @@ The `pause_length` can be an integer or a string (to pull in variables or calcul
 
 
 ### Statement Modifiers
+The statmods below need to be accessed in the order that they are provided.
 
-None.
+**Max Statmods: 1**
+
+#### Counting
+Only one of these are allowed
+| Statmod | Description |
+|-----|-----|
+| countdown | Countdown in the form of a simple message with the format `[seconds]...` |
+
 
 
 ### Example
